@@ -1,0 +1,45 @@
+.physician-dashboard {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f7f6;
+  min-height: 100vh;
+}
+
+.physician-dashboard h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #000000;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.physician-dashboard h2 {
+  margin-bottom: 20px;
+  color: #000000;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.physician-dashboard p {
+  margin-bottom: 15px;
+  color: #000000;
+  line-height: 1.6;
+}
+
+.physician-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Chart placeholder - now handled by unified Placeholder component */
+
+.dashboard-content {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 20px;
+}
+
+

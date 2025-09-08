@@ -1,0 +1,471 @@
+/* Global minimal text styling */
+* {
+  color: #000000;
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.App {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #000000;
+}
+
+.App-header {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.App-header h1 {
+  margin: 0 0 15px 0;
+  color: #000000;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.role-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.patient-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.patient-selector label {
+  font-weight: 400;
+  color: #000000;
+  font-size: 1.1rem;
+}
+
+.patient-selector select {
+  padding: 8px 12px;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: white;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.patient-selector select:hover {
+  border-color: #2980b9;
+  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+}
+
+.patient-selector select:focus {
+  outline: none;
+  border-color: #2980b9;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.tab-navigation {
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tab-button {
+  padding: 15px 30px;
+  border: none;
+  background: transparent;
+  color: #000000;
+  font-size: 1.1rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+  margin: 0 5px;
+}
+
+.tab-button:hover {
+  color: #000000;
+  background: rgba(52, 152, 219, 0.1);
+}
+
+.tab-button.active {
+  color: #000000;
+  border-bottom-color: #3498db;
+  background: rgba(52, 152, 219, 0.05);
+}
+
+.App-main {
+  padding: 30px 20px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.mood-emoji {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  line-height: 28px;
+  border-radius: 50%;
+  margin: 0 2px;
+  font-size: 16px;
+  background-color: #f1c40f; /* Yellow */
+}
+
+/* Mood Calendar styles moved to MoodCalendar.css for consistency */
+
+/* Calendar styles moved to MoodCalendar.css for consistency */
+
+/* Legend styles moved to ChartStyles.css for consistency */
+
+.loading {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2rem;
+  color: #000000;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+
+
+/* Glucose Chart Styles */
+.glucose-chart-container {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.glucose-chart-container .chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.glucose-chart-wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.glucose-legend {
+  flex-basis: 200px;
+  flex-shrink: 0;
+}
+
+.glucose-legend h4 {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.glucose-legend .legend-items {
+  margin-bottom: 20px;
+}
+
+.glucose-legend .legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.glucose-legend .legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+}
+
+.glucose-legend .measurement-types .type-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  padding: 8px;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.glucose-legend .measurement-types .type-label {
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+}
+
+.glucose-legend .measurement-types .type-value {
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+}
+
+/* Blood Pressure Chart Styles */
+.bp-chart-container {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.bp-chart-container .chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.bp-charts-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bp-chart-section {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #e9ecef;
+}
+
+.bp-chart-section h4 {
+  margin: 0 0 15px 0;
+  color: #000000;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.bp-legend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.bp-legend .legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.bp-legend .legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+}
+
+.bp-legend .legend-text {
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+}
+
+/* Exercise Chart Styles */
+.exercise-chart-container {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.exercise-chart-container .chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.exercise-chart-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.exercise-chart-section {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #e9ecef;
+}
+
+.exercise-chart-section h4 {
+  margin: 0 0 15px 0;
+  color: #000000;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.exercise-legend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+/* Exercise legend styles moved to ChartStyles.css for consistency */
+
+/* Sleep Chart Styles */
+.sleep-chart-container {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.sleep-chart-container .chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sleep-chart-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sleep-chart {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 20px 0;
+  flex-direction: row;
+}
+
+/* Sleep chart styles moved to SleepChart.css for consistency */
+
+.sleep-legend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.sleep-legend .legend-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15px;
+  gap: 8px;
+}
+
+.sleep-legend .legend-color-box {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+}
+
+.sleep-legend .legend-label {
+  font-size: 0.9em;
+  color: #000000;
+}
+
+/* Meal Contents Chart Styles */
+.meal-contents-chart-container {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.meal-contents-chart-container .chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.meal-contents-legends-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.meal-legend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.meal-legend .legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.meal-legend .legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+}
+
+.meal-legend .legend-text {
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+}
+
+/* Pain Chart Styles - Moved to ChartStyles.css for consistency */

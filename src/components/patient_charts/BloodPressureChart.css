@@ -1,0 +1,119 @@
+@import '../ChartStyles.css';
+
+.bp-chart-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 100%;
+  align-items: center;
+  padding: 16px;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  min-height: 500px;
+}
+
+.bp-chart-container.expanded {
+  flex-direction: column;
+  gap: 20px;
+  padding: 32px;
+  flex-grow: 1;
+  align-items: stretch;
+  justify-content: flex-start;
+  min-height: 700px;
+}
+
+.bp-main-title {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  margin: 0 0 12px 0;
+  text-align: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.bp-chart-container.expanded .bp-main-title {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  padding: 12px 0;
+}
+
+.bp-charts-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.bp-chart-container.expanded .bp-charts-wrapper {
+  flex-direction: row;
+  gap: 24px;
+  flex-grow: 1;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Legend */
+.bp-legend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 8px;
+  margin: 4px 0;
+}
+
+/* Blood pressure chart legend - using universal structure with consistent dimensions */
+.bp-chart-container .legend-container {
+  margin-bottom: var(--chart-spacing-sm);
+  min-height: 80px; /* Match universal legend height */
+  max-width: calc(100% - 32px); /* Reduced from 48px to 32px for better fit */
+  padding: var(--chart-spacing-md); /* Ensure consistent padding */
+  overflow: hidden; /* Prevent content from extending beyond container */
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+.bp-chart-container.expanded .legend-container {
+  max-width: calc(100% - 48px); /* Account for expanded container padding */
+  margin: 0 auto 20px auto;
+  overflow: hidden; /* Prevent content from extending beyond container */
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+/* Ensure legend items don't overflow in blood pressure chart */
+.bp-chart-container .legend-container .legend-items {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.bp-chart-container .legend-container .legend-item {
+  max-width: calc(100% - 16px); /* Ensure items don't touch container edges */
+  box-sizing: border-box;
+}
+
+.chart-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  flex: 1;
+  max-width: 600px;
+}
+
+.chart-section.expanded {
+  min-width: 0;
+  max-width: 600px;
+  flex: 1;
+}
+
+
