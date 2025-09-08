@@ -224,13 +224,13 @@ const GlucoseChart = ({ patientId, isExpanded = false, onExpand, viewMode = 'pat
     { 
       label: 'Pre-meal', 
       shape: 'outlined',
-      shapeStyle: { borderColor: 'var(--chart-color-text-secondary)' },
+      shapeStyle: { borderColor: '#666666' },
       description: 'Blood glucose measurements taken before meals'
     },
     { 
       label: 'Post-meal', 
       shape: 'filled',
-      shapeStyle: { backgroundColor: 'var(--chart-color-text-secondary)' },
+      shapeStyle: { backgroundColor: '#666666' },
       description: 'Blood glucose measurements taken after meals'
     },
   ];

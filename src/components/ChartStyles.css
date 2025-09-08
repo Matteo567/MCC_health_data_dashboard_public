@@ -502,12 +502,14 @@
 
 .legend-shape-outlined {
   background-color: transparent;
-  border: 2px solid var(--chart-color-text-secondary);
+  border: 2px solid #666666;
+  display: inline-block;
 }
 
 .legend-shape-filled {
-  background-color: var(--chart-color-text-secondary);
-  border: 1px solid var(--chart-color-text-secondary);
+  background-color: #666666;
+  border: 1px solid #666666;
+  display: inline-block;
 }
 
 /* Removed redundant individual chart-specific legend width rules - now using universal styling */
