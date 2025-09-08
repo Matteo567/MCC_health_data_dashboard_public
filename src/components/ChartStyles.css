@@ -492,6 +492,24 @@
   box-shadow: 0 0 0 1px var(--chart-color-border);
 }
 
+/* Legend shape styles for special indicators */
+.legend-shape {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  border-radius: var(--chart-border-radius-sm);
+}
+
+.legend-shape-outlined {
+  background-color: transparent;
+  border: 2px solid var(--chart-color-text-secondary);
+}
+
+.legend-shape-filled {
+  background-color: var(--chart-color-text-secondary);
+  border: 1px solid var(--chart-color-text-secondary);
+}
+
 /* Removed redundant individual chart-specific legend width rules - now using universal styling */
 
 /* Universal chart container styling for consistent dimensions */
