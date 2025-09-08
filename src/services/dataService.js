@@ -59,7 +59,7 @@ const CSV_CONFIG = {
 const fetchPatientCsvData = async (patientId) => {
   try {
     // Add cache busting to ensure fresh data
-    const response = await fetch(`/Health_data_dashboard_v1/synthetic_patients/${patientId}.csv?v=${Date.now()}`);
+    const response = await fetch(`/MCC_health_data_dashboard_public/synthetic_patients/${patientId}.csv?v=${Date.now()}`);
     
     if (!response.ok) {
       throw new Error(`Failed to fetch CSV for ${patientId}: ${response.status} ${response.statusText}`);

@@ -1,6 +1,6 @@
 # MCC Digital Health Data Visualizations
 
-**[Live Demo](https://matteo567.github.io/Health_data_dashboard_v1)**
+**[Live Demo](https://matteo567.github.io/MCC_health_data_dashboard_public)**
 
 A React-based health data visualization dashboard for patients and physicians. This project demonstrates modern web development practices with a focus on clean architecture and reusable components.
 
@@ -42,8 +42,8 @@ This application provides health data visualization with dual interfaces:
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/matteo567/Health_data_dashboard_v1.git
-cd Health_data_dashboard_v1
+git clone https://github.com/matteo567/MCC_health_data_dashboard_public.git
+cd MCC_health_data_dashboard_public
 
 # Install dependencies
 npm install
